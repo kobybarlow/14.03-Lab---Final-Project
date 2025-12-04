@@ -1,8 +1,40 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.center {
+  text-align: center;
 }
 
-a {
-  color: #00B7FF;
+body {
+  background-color: #10291D;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 600px;
+}
+
+h1 {
+  font-style: 'Italiano';
+}
+
+
+/* Online Ordering Services */
+.btn-order-service {
+  background: #f7f7f7;
+  color: #10291D;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  display: inline-block;
+  transition: 0.25s;
+  text-decoration: none;
+}
+
+.bottom-center {
+  position: fixed;
+  bottom: 20px;
+  align-self: center;
+}
+
+.btn-order-service:hover {
+  color: #F7C64A;
+  transform: translate(-2px);
 }
