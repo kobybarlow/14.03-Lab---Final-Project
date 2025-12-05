@@ -9,4 +9,18 @@ router.get('/', (req, res) => {
 });
 
 
+// GET Menu Page
+router.get('/menu', (req, res) => {
+  res.render('menu', {
+    title: 'Our Menu'
+  });
+});
+
+// Get Info Page
+router.get('/info', (req, res) => {
+  res.render('info', {
+    title: 'info'
+  });
+});
+
 module.exports = router;
