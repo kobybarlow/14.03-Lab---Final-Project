@@ -5,10 +5,15 @@ block content
         .reviews-card
             h1.center= title
 
-            .reviews-form
-                input#reviewInput(type="text" placeholder="Write your review..." required)
+            form#reviewForm(method="POST" action="/reviews")
+                .reviews-form
+                    input#reviewInput(type="text" name="comment" placeholder="Write your review..." required)
+                button(type="submit") Submit 
+
 
             .comment-list
+                each comment in comments
+                    .comment= comment
 
     .back-button-container
         a.btn-reviews(href="/") Back to Home

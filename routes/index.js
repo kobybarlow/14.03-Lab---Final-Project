@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+let comments = [];
+
 // GET home page
 router.get('/', (req, res) => {
   res.render('index', {
@@ -24,9 +26,18 @@ router.get('/info', (req, res) => {
 });
 
 // Get Reviews Page
-router.get('/reviews', (req, res) => {
+router.get('/reviews', function(req, res, next) {
   res.render('reviews', {
-    title: 'Reviews'
-  });
+    title: 'Reviews', comments: comments });
 });
+
+// POST new reviews
+router.post('/reviews', function(req, res, next) {
+  const comment = req.body.comment?.trim();
+  if (comment) {
+    comments.push(comment);
+  }
+  res.redirect('/reviews');
+});
+
 module.exports = router;
