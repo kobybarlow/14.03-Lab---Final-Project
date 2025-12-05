@@ -2,18 +2,36 @@
   text-align: center;
 }
 
-body {
+.content {
+  flex: 1;
+}
+
+html, body {
   background-color: #10291D;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 600px;
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 h1 {
   font-style: 'Italiano';
 }
 
+.page-container {
+  min-height: 10000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.button-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
 
 /* Online Ordering Services */
 .btn-order-service {
@@ -26,13 +44,7 @@ h1 {
   display: inline-block;
   transition: 0.25s;
   text-decoration: none;
-}
-
-.bottom-center {
-  position: fixed;
-  bottom: 20px;
-  align-self: center;
-}
+} 
 
 .btn-order-service:hover {
   color: #F7C64A;

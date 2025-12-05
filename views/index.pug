@@ -1,14 +1,12 @@
 extends layout
 
 block content
-  h1.center= title
-  p.center Serving since 1992
-  a.bottom-center.btn-order-service(href="https://www.doordash.com/") Doordash
-  a.bottom-center.btn-order-service(href="https://www.ubereats.com/") Uber Eats
+    .page-container 
+        .content
+            h1.center= title
+            p.center Serving since 1992
+            p.center Enjoy our delicious donuts!
 
- 
-  
-
-
-
-  
+        .button-stack
+            a.btn-order-service(href="https://www.ubereats.com/" target="_blank") Uber Eats
+            a.btn-order-service(href="https://www.doordash.com/" target="_blank") DoorDash
