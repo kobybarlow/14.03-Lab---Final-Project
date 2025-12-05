@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+
+
+/* Donut Logo */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+header .logo {
+  max-width: 500px;
+  height: auto;
+}
+
+
 .center {
   text-align: center;
 }
@@ -14,15 +30,14 @@ html, body {
 }
 
 h1 {
-  font-style: 'Italiano';
+  font-family: 'Montserrat', sans-serif;
 }
 
 .page-container {
-  min-height: 1000px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
+  align-items: center;
 }
 .button-stack {
   display: flex;
@@ -51,8 +66,20 @@ h1 {
   transform: translate(-2px);
 }
 
+.button-stack h2 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 24px;                        
+    margin-bottom: 10px;                     
+    text-align: center;                       
+}
 
-/* Menu Button */
+
+/* Menu Button and Page */
+
+.menu-page {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .btn-menu {
   background: #f7f7f7;
   color: #10291D;
@@ -63,6 +90,7 @@ h1 {
   display: inline-block;
   transition: 0.25s;
   text-decoration: none;
+
 }
 
 .btn-menu:hover {
@@ -70,26 +98,52 @@ h1 {
   transform: translate(-2px);
 }
 
-.menu-container {
+.menu-page .menu-container {
   margin-top: 20px;
   display: flex;
   justify-content: center;
 }
 
-.menu-list {
+.menu-page .menu-list {
+  background: #f7f7f7;
   list-style: none;
   padding: 0;
   font-size: 20px;
   line-height: 1.8;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
 }
 
-.back-button-container {
+.menu-page .menu-intro-card {
+  background: #f7f7f7f7;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+
+.menu-page .back-button-container {
   margin-top: 40px;
   display: flex;
   justify-content: center;
 }
 
-/* Info Button */
+.menu-page .menu-card {
+  background: #f7f7f7;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%
+}
+
+
+/* Info Button and Page  */
 .btn-info {
   background: #f7f7f7;
   color: #10291D;
@@ -124,4 +178,119 @@ h1 {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+}
+
+.info-card {
+  background: #f7f7f7f7;
+  padding: 10px 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 200px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+
+.info-card-information {
+  background: #f7f7f7f7;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 550px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+
+
+
+/* Reviews Button and Page */
+.btn-reviews {
+  background: #f7f7f7;
+  color: #10291D;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  display: inline-block;
+  transition: 0.25s;
+  text-decoration: none;
+}
+
+.btn-reviews:hover {
+  color: #F7C64A;
+  transform: translate(-2px);
+}
+
+.reviews-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-list {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.back-button-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-form {
+  background: #f7f7f7f7;
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+#reviewInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.comment {
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.comment-list {
+  margin-top: 20px;
+}
+
+.reviews-card {
+  background: #f7f7f7f7;
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  display: block;
 }

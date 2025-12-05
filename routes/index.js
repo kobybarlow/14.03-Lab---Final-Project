@@ -12,15 +12,21 @@ router.get('/', (req, res) => {
 // GET Menu Page
 router.get('/menu', (req, res) => {
   res.render('menu', {
-    title: 'Our Menu'
+    title: 'Downtown Donuts Menu'
   });
 });
 
 // Get Info Page
 router.get('/info', (req, res) => {
   res.render('info', {
-    title: 'info'
+    title: 'About Us'
   });
 });
 
+// Get Reviews Page
+router.get('/reviews', (req, res) => {
+  res.render('reviews', {
+    title: 'Reviews'
+  });
+});
 module.exports = router;

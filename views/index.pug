@@ -4,11 +4,17 @@ block content
     .page-container 
         .content
             h1.center= title
-            p.center Serving since 1992
-            p.center Enjoy our delicious donuts!
-            a.btn-menu(href="/menu") View Our Menu!
-            a.btn-info(href="/info") About Us!
+
+                    p.center Serving since 1992
+                    p.center Enjoy our delicious donuts!
+                    .page-container
+                        a.btn-menu(href="/menu") View Our Menu!
+                        .button-stack
+                        a.btn-info(href="/info") About Us!
+                        .button-stack
+                        a.btn-reviews(href="/reviews") Reviews
 
         .button-stack
+            h2.center Online Ordering Services
             a.btn-order-service(href="https://www.ubereats.com/" target="_blank") Uber Eats
             a.btn-order-service(href="https://www.doordash.com/" target="_blank") DoorDash

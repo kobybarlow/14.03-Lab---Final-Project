@@ -1,15 +1,29 @@
 extends layout
 
 block content 
-    .page-container 
-        h1.center= title 
-        p.center Check out our wide selection of donuts below! 
+    .menu-page
+        .page-container 
+            h1.center= title 
 
-        .menu-container 
-            ul.menu-list 
-                li Donut 1
-                li Donut 2
-                li Donut 3
+            .menu-intro-card
+                p.center Check out our wide selection of donuts below! 
 
-        .back-button-container 
-            a.btn-menu(href="/") Back to Home
+            .menu-container 
+                .menu-card
+                    ul.menu-list 
+                        li Cinnamon Sugar - $2.00
+                        li Chocolate Icing - $2.00
+                        li Powdered Sugar - $2.00 
+                        li French Toast Donut - $4.00
+                        li Cookie n Cream - $4.00
+                        li Blueberry Cheescake - $4.00
+                        li ----------------------------------------------------
+                        li Espresso - $3.00
+                        li Americano - $3.50
+                        li Cappucino - $4.50
+                        li Flat white - $4.50
+                        li Mocha - $5.50
+                        li Hot Chocolate - $4.50
+
+            .back-button-container 
+                a.btn-menu(href="/") Back to Home
